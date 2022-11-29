@@ -6,7 +6,7 @@ public class Exercise_For1 {
 
 	public static void main(String[] args) {
 		
-		
+		//누적합
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();

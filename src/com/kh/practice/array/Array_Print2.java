@@ -1,6 +1,6 @@
 package com.kh.practice.array;
 
-public class Array_Print1 {
+public class Array_Print2 {
 
 	public static void main(String[] args) {
 		

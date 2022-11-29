@@ -12,21 +12,34 @@ public class Exercise_While2 {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("정수 입력 : ");
-		int num = sc.nextInt(); // 전역변수선언
-								// 지역변수선언
+		int count = 0;
 		
-		if (1<=num && num<=9) {
+		for(;;) {
+			System.out.print("정수 입력 : ");
+			int num = sc.nextInt(); 
 			
-			int i = 1;
-			while (i <= 9) {
-				System.out.printf("%d * %d = %d\n", num, i, num*i);
-				i++;
+			
+			if (1<=num && num<=9) {
+				
+				System.out.printf("===== %d단 =====\n", num);
+				int i = 1;
+				while (i <= 9) {
+					System.out.printf("%d * %d = %d\n", num, i, num*i);
+					i++;
+				}
+				count+=1;
+				System.out.println();
+				
+			} else {
+				System.out.println("1 ~ 9 사이의 양수를 입력해야 합니다.\n");
 			}
 			
-		} else {
-			System.out.println("1 ~ 9 사이의 양수를 입력해야 합니다.");
+			if (count == 3) {
+				System.out.println("종료되었습니다.");
+				break;
+			}
 		}
+		
 		
 	
 		

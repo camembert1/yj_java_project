@@ -41,10 +41,14 @@ public class Exam_SortInsertion {
 					nums[j-1] = nums[j];
 					nums[j] = tmp;
 				} 
+				
+				System.out.printf("i = %d , j = %d ", i, j);
+				System.out.println(Arrays.toString(nums));
 			}
+			System.out.printf("	      ");
+			System.out.println(Arrays.toString(nums));
 		}
 		
-		System.out.println(Arrays.toString(nums));
 		
 
 	}

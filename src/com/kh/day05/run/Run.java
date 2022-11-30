@@ -17,7 +17,7 @@ public class Run {
 //		exWhile.exercise3();
 		
 		Exercise_Array  exArray = new Exercise_Array();
-		exArray.exercise5();
+		exArray.exercise7();
 		
 	}
 

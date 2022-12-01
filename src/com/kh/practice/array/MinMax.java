@@ -21,33 +21,34 @@ public class MinMax {
 		 * ÃÖ¼Ò°ª : 2
 		 */
 		
-		Random rand = new Random();
-		
 		int[] nums = new int[10];
-		int max = nums[0];
-		int min = nums[0];
 		
-		for (int i = 0; i < 10; i++) {
-			nums[i] = rand.nextInt(10)+1;
+		Random random = new Random();
+		
+		for (int i = 0; i < nums.length; i++) {
+			
+			nums[i] = (random.nextInt(10)+1);
+		}
+		
+		for (int i = 0; i < nums.length; i++) {
 			System.out.printf("%d ", nums[i]);
 		}
 		
-		for (int i = 1; i < nums.length; i++) {
+		int max = nums[0];
+		int min = nums[0];
+		
+		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] > max) {
 				max = nums[i];
 			}
-			
 			if (nums[i] < min) {
 				min = nums[i];
-				System.out.println(min);
 			}
-			
-			
-		}  
+		}
+		
 		System.out.println();
-		System.out.printf("ÃÖ´ñ°ª : %d%nÃÖ¼Ú°ª : %d%n",max, min);
-		
-		
+		System.out.printf("ÃÖ´ñ°ª : %d%n", max);
+		System.out.printf("ÃÖ¼Ú°ª : %d", min);
 		
 	}
 
